@@ -1,0 +1,25 @@
+.footer{
+    background: linear-gradient(90deg, #ff014f, #fff227);
+    padding: 10px;
+}
+.footer-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-container p{
+    margin-top: 10px;
+    font-weight: bold;
+    color: #ffffff;
+}
+.img{
+    margin-right: 20px;
+}
+@media (max-width: 350px) {
+    .footer{
+        padding: 10px 1px 10px 7px;
+    }
+    .footer-container p{
+         font-size: 12px;
+    }
+}

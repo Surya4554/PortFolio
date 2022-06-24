@@ -1,0 +1,44 @@
+.features .box {
+    padding: 50px;
+  }
+  .features .box h2 {
+    margin: 20px 0 20px 0;
+  }
+  .features .heading h1{
+    text-align: center;
+    color: #ff014f;
+    font-weight: bold;
+  }
+  .features .box p {
+    word-spacing: 2px;
+    transition: 0.5s;
+  }
+  .features .box i {
+    font-size: 30px;
+    margin-top: 20px;
+    transition: 0.5s;
+    opacity: 0.1;
+  }
+  .features .box:hover i {
+    color: #ff014f;
+    opacity: 1;
+  }
+  
+  @media (max-width: 550px){
+    .features .heading h1{
+          font-size: 35px;
+    }
+  }
+  @media (max-width: 340px){
+    .features .box {
+        padding: 30px;
+      }
+    .features .box h2 {
+        margin: 10px 0 10px 0;
+      }
+  }
+  @media (max-width: 300px){
+    .features .box {
+        padding: 10px;
+      } 
+  }

@@ -1,0 +1,112 @@
+header {
+  height: 10vh;
+  top: 0;
+  position: sticky;
+  z-index: 10;
+  line-height: 10vh;
+  background: linear-gradient(90deg, #ff014f, #fff227);
+}
+header .container {
+  padding: 0 80px 0 40px;
+}
+.my-name{
+  color: white;
+  font-weight: bolder;
+  font-size: 30px;
+}
+header ul li {
+  margin-left: 40px;
+}
+header ul li a {
+  transition: 0.5s;
+  font-size: 20px;
+  color:#ffffff;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+header ul li a:hover {
+  color: #000;
+  text-decoration: none;
+  text-shadow: 2px 2px 2px white;
+}
+.active{
+    color: rgb(15, 15, 173);
+    font-size: 22px;
+    text-shadow: 2px 2px 2px white;
+}
+.home-btn {
+  padding: 18px 25px;
+  border-radius: 6px;
+  transition: 0.3s all ease;
+  cursor: pointer;
+  height: fit-content;
+  color: #ff014f;
+}
+.home-btn {
+  background: linear-gradient(145deg, #e2e8ec, #ffffff);
+  box-shadow: 4px 4px 8px #cbcbcb, -4px -4px 8px #ffffff;
+}
+.home-btn:hover {
+  background: linear-gradient(90deg, #ff014f, #fff227);
+  color: white;
+}
+.open {
+  display: none;
+}
+@media (max-width: 768px) {
+  header .container{
+    padding: 0 5px 0 5px;
+  }
+  header ul {
+    padding-top: 30px;
+  }
+  .nav-links-mobile {
+    position: absolute;
+    display: block;
+    list-style: none;
+    box-shadow: rgba(50, 50, 93, 0.23) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    left: 0;
+    top: 0;
+    transition: all 0.5s ease-in-out;
+    width: 60%;
+    height: 100vh;
+    background: linear-gradient(90deg, #ff014f, #fff227);
+    z-index: 888;
+  }
+  header ul li {
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+    text-transform: uppercase;
+    line-height: 70px;
+  }
+  header .link {
+    display: none;
+  }
+  .close,
+  .open {
+    position: absolute;
+    top: 22px;
+    right: 20px;
+    color: #ffffff;
+    display: block;
+    font-size: 25px;
+    z-index: 999;
+  }
+  .close {
+    right: 45%;
+  }
+  .close.home-btn {
+    background: linear-gradient(145deg, #eaffc7, #ffffff);
+    color: #1b1215;
+    top:15px;
+    border-radius: 50%;
+    font-weight: bold;
+    padding: 0;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+  }
+  .header.active {
+    height: 10vh;
+  }
+}
